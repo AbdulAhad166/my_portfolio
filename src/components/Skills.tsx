@@ -1,4 +1,4 @@
-import { Code2, Palette, Lightbulb } from "lucide-react";
+import { Code2, Lightbulb } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
 const Skills = () => {
@@ -11,16 +11,6 @@ const Skills = () => {
         { name: "Web Technologies", items: ["HTML5", "CSS3", "React.js"] },
         { name: "Databases", items: ["SQL", "MongoDB"] },
         { name: "Tools & Frameworks", items: ["Vite", "Vercel", "Git"] },
-      ],
-    },
-    {
-      title: "Design & Development",
-      icon: <Palette className="text-accent" size={32} />,
-      skills: [
-        { name: "UI/UX Design", items: ["Responsive interfaces", "User-centric design"] },
-        { name: "AI Integration", items: ["Generative AI", "NLP models"] },
-        { name: "Backend Development", items: ["Scalable logic", "Database design"] },
-        { name: "Optimization", items: ["Performance tuning", "Code efficiency"] },
       ],
     },
     {
@@ -42,7 +32,7 @@ const Skills = () => {
           Skills & Expertise
         </h2>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {skillCategories.map((category, categoryIndex) => (
             <Card
               key={categoryIndex}

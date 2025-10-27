@@ -1,6 +1,5 @@
 import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import profilePhoto from "@/assets/profile-photo.jpg";
 
 const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -19,7 +18,7 @@ const Hero = () => {
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="max-w-4xl mx-auto text-center">
           {/* Text Content */}
           <div className="space-y-6 animate-fade-in-up">
             <div className="space-y-2">
@@ -36,7 +35,7 @@ const Hero = () => {
               Building Smart, Scalable, and Human-Centric Digital Experiences.
             </p>
 
-            <div className="flex flex-wrap gap-4 pt-4">
+            <div className="flex flex-wrap gap-4 pt-4 justify-center">
               <Button
                 onClick={() => scrollToSection("#projects")}
                 className="bg-primary hover:bg-primary/90 text-primary-foreground glow-primary"
@@ -54,7 +53,7 @@ const Hero = () => {
             </div>
 
             {/* Social Links */}
-            <div className="flex gap-4 pt-4">
+            <div className="flex gap-4 pt-4 justify-center">
               <a
                 href="https://github.com/AbdulAhad16062005"
                 target="_blank"
@@ -77,18 +76,6 @@ const Hero = () => {
               >
                 <Mail size={24} />
               </a>
-            </div>
-          </div>
-
-          {/* Profile Photo */}
-          <div className="flex justify-center animate-fade-in" style={{ animationDelay: "0.3s" }}>
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary to-accent rounded-full blur-2xl opacity-30 animate-glow-pulse"></div>
-              <img
-                src={profilePhoto}
-                alt="Abdul Ahad"
-                className="relative w-80 h-80 md:w-96 md:h-96 rounded-full object-cover border-4 border-primary/20 shadow-2xl"
-              />
             </div>
           </div>
         </div>
