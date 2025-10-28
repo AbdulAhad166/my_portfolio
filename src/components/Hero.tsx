@@ -24,14 +24,14 @@ const Hero = () => {
             <div className="space-y-2">
               <p className="text-primary text-lg font-medium">Hi, I'm</p>
               <h1 className="text-5xl md:text-7xl font-bold">
-                Abdul <span className="gradient-text">Ahad</span>
+                <span className="gradient-text">Abdul Ahad</span>
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground font-light">
                 AI & Full-Stack Developer
               </p>
             </div>
 
-            <p className="text-lg text-muted-foreground max-w-xl leading-relaxed">
+            <p className="text-lg text-muted-foreground max-w-xl mx-auto leading-relaxed">
               Building Smart, Scalable, and Human-Centric Digital Experiences.
             </p>
 
